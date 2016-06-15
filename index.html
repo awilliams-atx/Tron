@@ -1,17 +1,19 @@
 <html>
   <head>
     <title>Tron</title>
-    <link rel="stylesheet" href="assets/stylesheets/game.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="assets/stylesheets/reset.css">
+    <link rel="stylesheet" href="assets/stylesheets/game.css">
   </head>
 
   <body>
     <div id='tron-game'>
       <canvas id='tron-canvas'></canvas>
-      <aside id='tron-messages'></aside>
-      <ul>
-        <li id='tron-winner-messages'></li>
-      </ul>
-      <aside id='tron-messages'></aside>
+      <aside id='tron-messages'>
+        <ul>
+          <li id='tron-messages-winner'></li>
+          <li id='tron-messages-new-game'></li>
+        </ul>
+      </aside>
     </div>
 
     <script type="application/javascript" src="lib/bundle.js"></script>
