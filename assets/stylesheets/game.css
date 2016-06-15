@@ -1,5 +1,19 @@
-canvas {
-  display: block;
+#tron-game {
+  position: relative;
+  width: 840px;
   margin: 30px auto;
+}
+
+#tron-canvas {
+  display: block;
   border: 20px ridge gray;
+}
+
+#tron-messages {
+  position: absolute;
+  float: left;
+  color: white;
+  font-size: 25px;
+  top: 25px;
+  left: 30px;
 }
