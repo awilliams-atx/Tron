@@ -139,6 +139,8 @@ The game is over when either player loses all their lives or both players lose t
 
 0. Cancel the animation frame.
   * See what happens. Is this the right way to go?
+    * Update: Looks like it!
+    <!-- TODO: further design the modal -->
 0. Draw a new black rectangle over the canvas with .5 opacity.
 0. Draw another smaller rectangle in the middle.
   * In it, announce the winner and provide a restart button.
