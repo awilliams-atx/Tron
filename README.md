@@ -162,7 +162,7 @@ The game is over when either player loses all their lives or both players lose t
 
 ##### `Game#moveCycles`
 
-* Store the cycle's position in an ivar object `trails` before moving it.
+* Store the cycle's position in an ivar object `trails` after moving it.
   * `trails` has coordinate keys and color values.
 
 ##### `Game#draw`
