@@ -36,7 +36,7 @@ The game is over when either player loses all their lives or both players lose t
 
 ### Implementation Timeline
 
-#### Phase I: Single moving LightCycle.
+#### Phase I: Single moving Cycle.
 
 ##### Set up
 
@@ -72,55 +72,50 @@ The game is over when either player loses all their lives or both players lose t
   * Fill the ctx rectangle.
 0. Check: does the canvas draw on the page yet?
 
-##### `LightCycle` constructor
+##### `Cycle` constructor
 
-0. Create, export a `LightCycle` class
-  * Accept an gameOverOptions object of position, direction, and color.
+0. Create, export a `Cycle` class
+  * Accept an options object of position, direction, and color.
 0. Require it in `Game`
-0. Call `#addLightCycles` in `Game` constructor
-  * For now, just add a single `LightCycle`
+0. Call `#addCycles` in `Game` constructor
+  * For now, just add a single `Cycle`
 0.
 
-##### Add single `LightCycle` to `Game`
-0. Set up an empty lightCycles ivar
-0. Write `#addLightCycles`
-  * For now, instantiate single LightCycle, passing in position [25, 10].
+##### Add single `Cycle` to `Game`
+0. Set up an empty cycles ivar
+0. Write `#addCycles`
+  * For now, instantiate single Cycle, passing in position [10, 25].
   * Set up direction [0, 1]
-    * Later, the other LightCycle will start at [25, 60].
-  * Call `#addLightCycles` from constructor.
-    * Instantiate a single `LightCycle` and add it to a `lightCycles` ivar.
-    * Return the `LightCycle`
-0. Call `LightCycle#draw` on each cycle ivar inside `Game#draw`.
+    * Later, the other Cycle will start at [60, 25].
+  * Call `#addCycles` from constructor.
+    * Instantiate a single `Cycle` and add it to a `cycles` ivar.
+    * Return the `Cycle`
+0. Call `Cycle#draw` on each cycle ivar inside `Game#draw`.
 
 
-##### `LightCycle#draw`
+##### `Cycle#draw`
 
 0. Set the ctx fillStyle to the cycle's color ivar.
 0. Fill a rectangle on the ctx.
   * Start at 10x each coordinate and fill in 10px east and south.
 
-
-
-
-
 #### Phase II: Collisions
 
-##### `LightCycle#move` (no keyboard control yet)
+##### `Cycle#move` (no keyboard control yet)
 
 0. Move one space in the direction indicated by the ivar `direction`
   * Later, map keys to change direction
 
-##### `Game#moveLightCycles`
+##### `Game#moveCycles`
 
-* Call `#move` for each `LightCycle`
+* Call `#move` for each `Cycle`
 
 ##### `Game#step` (no collisions yet)
 
-* Call `#moveLightCycles`
+* Call `#moveCycles`
 
-##### `Game#isGameOver`
-
-* Return an ivar `isGameOver`
+##### `isGameOver`
+* Set an ivar `isGameOver` to false.
   * Set this ivar in other functions that check for collisions etc.
 
 ##### `GameView#animate`
@@ -128,16 +123,16 @@ The game is over when either player loses all their lives or both players lose t
 * If `Game#isGameOver`, call `GameView#endGame` (defined later)
 * Otherwise, call `Game#step` followed by `Game#draw`, passing in ctx.
 
-##### `LightCycle#isOutOfBounds`
+##### `Cycle#isOutOfBounds`
 
 * Check the coordinates of the light cycles against the dimensions of the game area. Return a boolean.
 * For testing purposes, position the cycle near the edge.
 
 ##### `Game#checkCollisions` (cycle out of bounds)
 
-0. Call `LightCycle#isOutOfBounds`
-  * For testing, if a `LightCycle` is out of bounds, alert to that effect.
-0. If any `LightCycle` has collided, set ivar `isGameOver` to `true`
+0. Call `Cycle#isOutOfBounds`
+  * For testing, if a `Cycle` is out of bounds, alert to that effect.
+0. If any `Cycle` has collided, set ivar `isGameOver` to `true`
   * Set an ivar gameOverOptions object with things like winner, message.
 
 ##### `GameView#endGame`
@@ -149,11 +144,11 @@ The game is over when either player loses all their lives or both players lose t
   * In it, announce the winner and provide a restart button.
   * Construct a new `Game` object and call `GameView#animate`
 
-##### `LightCycle#isCollidedWith` (cycle)
+##### `Cycle#isCollidedWith` (cycle)
 
-0. In `Game#addLightCycles`, add the other cycle.
+0. In `Game#addCycles`, add the other cycle.
   * Position it near the first cycle so they can quickly collide.
-0. In `LightCycle#isCollidedWith`, accept a collidables object.
+0. In `Cycle#isCollidedWith`, accept a collidables object.
 0. First, check for colliding directly with the other cycle.
 0. If their positions are the same, set ivar `isGameOver` and `gameOverOptions`
 
@@ -163,20 +158,20 @@ The game is over when either player loses all their lives or both players lose t
 
 #### Phase III: Trails
 
-##### `Game#moveLightCycles`
+##### `Game#moveCycles`
 
 * Store the cycle's position in an ivar object `trails` before moving it.
   * `trails` has coordinate keys and color values.
 
 ##### `Game#draw`
 
-* Draw each `LightCycle` and each trail square.
+* Draw each `Cycle` and each trail square.
 
 ##### `Game#checkCollisions` (trail)
 
-* Add a key `trails` to the `collidables` object and pass all the trail blocks into `LightCycle#isCollidedWith`
+* Add a key `trails` to the `collidables` object and pass all the trail blocks into `Cycle#isCollidedWith`
 
-##### `LightCycle#isCollidedWith` (trail)
+##### `Cycle#isCollidedWith` (trail)
 
 * The only difference between colliding with a trail and the game area boundary is the message.
 
