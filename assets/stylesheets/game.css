@@ -14,7 +14,7 @@
   border: 20px ridge #068bf9;
 }
 
-#tron-messages {
+#tron-menu {
   font-family: helvetica;
   position: absolute;
   float: left;
@@ -24,16 +24,16 @@
   left: -2px;
 }
 
-#tron-messages li {
+#tron-menu li {
   margin-bottom: 10px;
   color: #00FF2F;
 }
 
-#tron-messages li:first-child:hover {
+#tron-menu li:first-child:hover {
   cursor: default;
 }
 
-#tron-messages li:nth-child(1n + 2):hover {
+#tron-menu li:nth-child(1n + 2):hover {
   text-shadow: 0 0 0.5em #FF0000;
   cursor: pointer;
 }
