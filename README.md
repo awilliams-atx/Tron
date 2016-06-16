@@ -181,5 +181,3 @@ The game is over when either player loses all their lives or both players lose t
 
 * [Canvas tutorial](https://developer.mozilla.org/en-US/docs/HTML/Canvas/Tutorial?redirectlocale=en-US&redirectslug=Canvas_tutorial)
 * [Canvas docs](https://developer.mozilla.org/en-US/docs/HTML/Canvas)
-* [Legend](http://asteroids.aaronik.com/)
-* [Legend](http://asteroidsdamacy.com/)
