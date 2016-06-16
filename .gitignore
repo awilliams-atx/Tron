@@ -1,2 +1,6 @@
-/lib/bundle.js
-/lib/bundle.js.map
+.DS_Store
+./assets/.DS_Store
+./assets/images/.DS_Store
+./lib/bundle.js
+./lib/bundle.js.map
+./wireframes/.DS_Store
