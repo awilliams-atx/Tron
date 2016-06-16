@@ -1,12 +1,17 @@
 #tron-game {
   position: relative;
-  width: 740px;
+  width: 540px;
   margin: 30px auto;
+}
+
+#tron-game header img {
+  margin-bottom: 20px;
+  width: 540px;
 }
 
 #tron-canvas {
   display: block;
-  border: 20px ridge gray;
+  border: 20px ridge #068bf9;
 }
 
 #tron-messages {
@@ -15,8 +20,8 @@
   float: left;
   color: white;
   font-size: 25px;
-  top: 25px;
-  left: 30px;
+  top: 93px;
+  left: -2px;
 }
 
 #tron-messages li {
