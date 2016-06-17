@@ -12,24 +12,42 @@
       <canvas id='tron-canvas'></canvas>
       <aside class='tron-game-menu' id='tron-outer-menu'>
         <ul>
-          <li id='tron-menu-winner'></li>
-          <li id='tron-menu-new-game'></li>
-          <li id='tron-menu-instructions'></li>
+          <li id='tron-menu-winner' />
+          <li id='tron-menu-new-game'>New Game</li>
+          <li id='tron-menu-instructions'>Instructions</li>
         </ul>
       </aside>
       <aside class='tron-game-menu' id='tron-instructions'>
         <header id='tron-instructions-header'></header>
+
         <section class='group' id='tron-instructions-keys'>
           <div class='tron-instructions-player group'>
-            <p id='tron-instructions-player-one'></p>
-            <p id='tron-instructions-player-one-key-info'></p>
-            <img id='tron-instructions-player-one-keys' />
+            <p id='tron-instructions-player-one'>
+              Player One
+            </p>
+            <p id='tron-instructions-player-one-key-info'>
+              Use these keys to move:
+            </p>
+            <img id='tron-instructions-player-one-keys'
+              src='./assets/images/tron_keys_wasd.png'/>
           </div>
           <div class='tron-instructions-player group'>
-            <p id='tron-instructions-player-two'></p>
-            <p id='tron-instructions-player-two-key-info'></p>
-            <img id='tron-instructions-player-two-keys' />
+            <p id='tron-instructions-player-two'>
+              PlayerTwo
+            </p>
+            <p id='tron-instructions-player-two-key-info'>
+              Use these keys to move:
+            </p>
+            <img id='tron-instructions-player-two-keys'
+              src='./assets/images/tron_keys_arrows.png'/>
           </div>
+        </section>
+
+        <section id='tron-instructions-advice' class='group'>
+          <p id='tron-instructions-advice-text'>Be careful of trails and boundaries!</p>
+          <img id='tron-instructions-advice-gif'
+              src='./assets/images/advice.gif'/>
+          <p id='tron-instructions-back'>Back</p>
         </section>
       </aside>
       <footer class='tron-footer'>

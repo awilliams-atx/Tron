@@ -16,10 +16,12 @@
 
 #tron-instructions-keys {
   width: 500px;
+  margin-top: 25px;
   margin-left: 22px;
 }
 
 #tron-instructions-player-one {
+  margin-bottom: 20px;
   margin-left: 20px;
   color: #FFF700;
 }
@@ -29,6 +31,7 @@
 }
 
 #tron-instructions-player-two {
+  margin-bottom: 20px;
   margin-left: 20px;
   color: #FF00D0;
 }
@@ -71,4 +74,38 @@
   display: block;
   float: left;
   margin-left: 10px;
+}
+
+#tron-instructions-advice {
+  margin-left: 40px;
+}
+
+#tron-instructions-advice-text {
+  margin-top: 20px;
+  font-size: 30px;
+}
+
+#tron-instructions-advice-gif {
+  margin-top: 20px;
+  display: block;
+  float: left;
+  width: 150px;
+  border: 5px ridge #2073b8;
+}
+
+#tron-instructions-back {
+  display: block;
+  float: left;
+  margin-top: 35px;
+  margin-left: 100px;
+
+  color: #2073b8;
+  font-family: helvetica;
+  font-style: italic;
+  font-size: 50px;
+}
+
+#tron-instructions-back:hover {
+  color: red;
+  cursor: pointer;
 }

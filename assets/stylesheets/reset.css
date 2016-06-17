@@ -7,3 +7,9 @@ li {
   display: block;
   clear: both;
 }
+
+p, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
