@@ -3,20 +3,35 @@
     <title>Tron</title>
     <link rel="stylesheet" href="assets/stylesheets/reset.css">
     <link rel="stylesheet" href="assets/stylesheets/game.css">
+    <link rel="stylesheet" href="assets/stylesheets/instructions.css">
   </head>
 
   <body>
     <div id='tron-game'>
       <header><img src='./assets/images/logo.png' /></header>
       <canvas id='tron-canvas'></canvas>
-      <aside id='tron-menu'>
+      <aside class='tron-game-menu' id='tron-outer-menu'>
         <ul>
           <li id='tron-menu-winner'></li>
           <li id='tron-menu-new-game'></li>
           <li id='tron-menu-instructions'></li>
         </ul>
       </aside>
-
+      <aside class='tron-game-menu' id='tron-instructions'>
+        <header id='tron-instructions-header'></header>
+        <section class='group' id='tron-instructions-keys'>
+          <div class='tron-instructions-player group'>
+            <p id='tron-instructions-player-one'></p>
+            <p id='tron-instructions-player-one-key-info'></p>
+            <img id='tron-instructions-player-one-keys' />
+          </div>
+          <div class='tron-instructions-player group'>
+            <p id='tron-instructions-player-two'></p>
+            <p id='tron-instructions-player-two-key-info'></p>
+            <img id='tron-instructions-player-two-keys' />
+          </div>
+        </section>
+      </aside>
       <footer class='tron-footer'>
         <div>Brought to you by Andrew Williams</div>
         <ul>
