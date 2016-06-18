@@ -14,22 +14,22 @@
 
 #tron-outer-menu li {
   margin-bottom: 10px;
+  position: relative;
+  left: 350px;
 }
 
-#tron-outer-menu li:first-child {
-  position: relative;
-  left: 480px;
+#tron-menu-winner {
   font-style: italic;
   height: 29px;
 }
 
-.tron-winner-animate {
-  transition: transform, 0.2s;
-  transform: translate3d(-480px, 0px, 0px);
+#tron-menu-winner:hover {
+  cursor: default;
 }
 
-#tron-outer-menu li:first-child:hover {
-  cursor: default;
+.tron-menu-animate {
+  transition: transform, 0.2s;
+  transform: translate3d(-350px, 0px, 0px);
 }
 
 #tron-outer-menu li:nth-child(1n + 2):hover {
