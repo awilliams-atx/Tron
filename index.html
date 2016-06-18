@@ -1,10 +1,11 @@
 <html>
   <head>
     <title>Tron</title>
+    <link rel="stylesheet" href="assets/stylesheets/reset.css">
     <link rel="stylesheet" href="assets/stylesheets/game.css">
     <link rel="stylesheet" href="assets/stylesheets/menu.css">
     <link rel="stylesheet" href="assets/stylesheets/instructions.css">
-    <link rel="stylesheet" href="assets/stylesheets/reset.css">
+    <link rel="stylesheet" href="assets/stylesheets/fade.css">
   </head>
 
   <body>
@@ -20,6 +21,7 @@
           <li id='tron-menu-instructions'></li>
         </ul>
       </aside>
+
 
       <aside class='tron-game-menu' id='tron-instructions'>
         <header id='tron-instructions-header'></header>
@@ -53,6 +55,8 @@
         </section>
       </aside>
 
+      <div id='screen-fader' class='nowhere'></div>
+
       <footer class='tron-footer'>
         <div>Brought to you by Andrew Williams</div>
         <ul>
@@ -63,6 +67,7 @@
           </li>
         </ul>
       </footer>
+
     </div>
 
     <script type="application/javascript" src="lib/bundle.js"></script>

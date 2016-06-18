@@ -1,0 +1,29 @@
+#screen-fader {
+  position: absolute;
+  top: 104px;
+  left: 20px;
+  width: 500px;
+  height: 300px;
+  background-color: black;
+}
+
+.transparent-block {
+  display: block;
+  opacity: 0;
+}
+
+.fade-in {
+  transition: opacity 1s ease;
+  opacity: 0;
+}
+
+.fade-out {
+  display: block;
+  transition: opacity .99s ease;
+  opacity: 1;
+}
+
+.nowhere {
+  display: none;
+  opacity: 0;
+}
