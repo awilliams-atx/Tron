@@ -17,15 +17,15 @@
 }
 
 #tron-outer-menu li:first-child {
+  position: relative;
+  left: 480px;
   font-style: italic;
   height: 29px;
 }
 
 .tron-winner-animate {
-  width: 380px;
-  text-align: right;
   transition: transform, 0.2s;
-  transform: translate3d(-315px, 0px, 0px);
+  transform: translate3d(-480px, 0px, 0px);
 }
 
 #tron-outer-menu li:first-child:hover {
