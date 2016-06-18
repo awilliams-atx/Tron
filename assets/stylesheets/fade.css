@@ -13,13 +13,13 @@
 }
 
 .fade-in {
-  transition: opacity 1s ease;
+  transition: opacity .25s ease;
   opacity: 0;
 }
 
 .fade-out {
   display: block;
-  transition: opacity .99s ease;
+  transition: opacity .24s ease;
   opacity: 1;
 }
 
