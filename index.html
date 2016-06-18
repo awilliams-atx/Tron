@@ -1,25 +1,28 @@
 <html>
   <head>
     <title>Tron</title>
-    <link rel="stylesheet" href="assets/stylesheets/reset.css">
     <link rel="stylesheet" href="assets/stylesheets/game.css">
+    <link rel="stylesheet" href="assets/stylesheets/menu.css">
     <link rel="stylesheet" href="assets/stylesheets/instructions.css">
+    <link rel="stylesheet" href="assets/stylesheets/reset.css">
   </head>
 
   <body>
     <div id='tron-game'>
       <header><img src='./assets/images/logo.png' /></header>
       <canvas id='tron-canvas'></canvas>
+
       <aside class='tron-game-menu' id='tron-outer-menu'>
+        <img id='tron-menu-background' />
         <ul>
           <li id='tron-menu-winner' />
           <li id='tron-menu-new-game'>New Game</li>
           <li id='tron-menu-instructions'>Instructions</li>
         </ul>
       </aside>
+
       <aside class='tron-game-menu' id='tron-instructions'>
         <header id='tron-instructions-header'></header>
-
         <section class='group' id='tron-instructions-keys'>
           <div class='tron-instructions-player group'>
             <p id='tron-instructions-player-one'>
@@ -33,7 +36,7 @@
           </div>
           <div class='tron-instructions-player group'>
             <p id='tron-instructions-player-two'>
-              PlayerTwo
+              Player Two
             </p>
             <p id='tron-instructions-player-two-key-info'>
               Use these keys to move:
@@ -42,7 +45,6 @@
               src='./assets/images/tron_keys_arrows.png'/>
           </div>
         </section>
-
         <section id='tron-instructions-advice' class='group'>
           <p id='tron-instructions-advice-text'>Be careful of trails and boundaries!</p>
           <img id='tron-instructions-advice-gif'
@@ -50,6 +52,7 @@
           <p id='tron-instructions-back'>Back</p>
         </section>
       </aside>
+
       <footer class='tron-footer'>
         <div>Brought to you by Andrew Williams</div>
         <ul>

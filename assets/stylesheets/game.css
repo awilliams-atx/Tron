@@ -13,26 +13,3 @@
   display: block;
   border: 20px ridge #068bf9;
 }
-
-.tron-game-menu {
-  font-family: helvetica;
-  position: absolute;
-  float: left;
-  color: white;
-  font-size: 25px;
-  top: 93px;
-  left: -2px;
-}
-
-#tron-outer-menu li {
-  margin-bottom: 10px;
-}
-
-#tron-outer-menu li:first-child:hover {
-  cursor: default;
-}
-
-#tron-outer-menu li:nth-child(1n + 2):hover {
-  text-shadow: 0 0 0.5em #FF0000;
-  cursor: pointer;
-}

@@ -1,3 +1,46 @@
-.menu-item-undisplayed {
-  display: none;
+.tron-game-menu {
+  font-family: helvetica;
+  position: absolute;
+  float: left;
+  color: white;
+  font-size: 25px;
+  top: 93px;
+  left: -2px;
+}
+
+#tron-outer-menu ul {
+  position: relative;
+}
+
+#tron-outer-menu li {
+  margin-bottom: 10px;
+}
+
+#tron-outer-menu li:first-child {
+  font-style: italic;
+  height: 29px;
+}
+
+.tron-winner-animate {
+  width: 380px;
+  text-align: right;
+  transition: transform, 0.2s;
+  transform: translate3d(-315px, 0px, 0px);
+}
+
+#tron-outer-menu li:first-child:hover {
+  cursor: default;
+}
+
+#tron-outer-menu li:nth-child(1n + 2):hover {
+  text-shadow: 0 0 0.5em #FF0000;
+  cursor: pointer;
+}
+
+#tron-menu-background {
+  position: absolute;
+  top: 11px;
+  left: 22px;
+  width: 500px;
+  opacity: 0.5;
 }
