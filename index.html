@@ -1,11 +1,12 @@
 <html>
   <head>
     <title>Tron</title>
-    <link rel="stylesheet" href="assets/stylesheets/reset.css">
+    <!-- <link rel="stylesheet" href="assets/stylesheets/reset.css">
     <link rel="stylesheet" href="assets/stylesheets/game.css">
     <link rel="stylesheet" href="assets/stylesheets/menu.css">
     <link rel="stylesheet" href="assets/stylesheets/instructions.css">
-    <link rel="stylesheet" href="assets/stylesheets/fade.css">
+    <link rel="stylesheet" href="assets/stylesheets/fade.css"> -->
+    <link rel='stylesheet' href='assets/stylesheets/entry.css'>
   </head>
 
   <body>
@@ -24,14 +25,13 @@
 
 
       <aside class='tron-game-menu' id='tron-instructions'>
-        <header id='tron-instructions-header'></header>
         <section class='group' id='tron-instructions-keys'>
           <div class='tron-instructions-player group'>
             <p id='tron-instructions-player-one'>
               Player One
             </p>
             <p id='tron-instructions-player-one-key-info'>
-              Use these keys to move:
+              Use these keys to turn:
             </p>
             <img id='tron-instructions-player-one-keys'
               src='./assets/images/tron_keys_wasd.png'/>
@@ -41,11 +41,15 @@
               Player Two
             </p>
             <p id='tron-instructions-player-two-key-info'>
-              Use these keys to move:
+              Use these keys to turn:
             </p>
             <img id='tron-instructions-player-two-keys'
               src='./assets/images/tron_keys_arrows.png'/>
           </div>
+          <footer id='tron-instructions-space-container'>
+            <p>New game / Pause:</p>
+            <img src='./assets/images/tron_space.png' />
+          </footer>
         </section>
         <section id='tron-instructions-advice' class='group'>
           <p id='tron-instructions-advice-text'>Be careful of trails and boundaries!</p>
