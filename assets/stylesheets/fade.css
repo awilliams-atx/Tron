@@ -19,7 +19,7 @@
 
 .fade-out {
   display: block;
-  transition: opacity .24s ease;
+  transition: opacity .23s ease;
   opacity: 1;
 }
 
