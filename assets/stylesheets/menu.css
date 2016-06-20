@@ -28,8 +28,15 @@
 }
 
 .tron-menu-animate {
-  transition: transform, 0.2s;
   transform: translate3d(-350px, 0px, 0px);
+  opacity: 1;
+  transition: all 0.2s;
+}
+
+.tron-menu-nowhere {
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s;
 }
 
 #tron-outer-menu li:nth-child(1n + 2):hover {
@@ -42,5 +49,5 @@
   top: 11px;
   left: 22px;
   width: 500px;
-  opacity: 0.5;
+  opacity: 0.4;
 }
