@@ -1,21 +1,15 @@
-#tron-instructions-header {
-  margin-bottom: 10px;
-  position: relative;
-  top: 25px;
-  left: 40px;
-}
-
 .tron-instructions-player {
   width: 245px;
   float: left;
+    margin-bottom: 15px;
 }
 
 #tron-instructions-header:hover {
   cursor: default;
 }
 
-#tron-instructions-keys {
-  width: 500px;
+#tron-instructions-movement {
+  width: 100%;
   margin-top: 25px;
   margin-left: 22px;
 }
@@ -76,7 +70,15 @@
   margin-left: 10px;
 }
 
-#tron-instructions-space-text {
+#tron-instructions-pause-new-game {
+  margin-bottom: 15px;
+}
+
+#tron-instructions-pause-new-game-text {
+  display: block;
+  float: left;
+  margin-right: 20px;
+  line-height: 25px;
   font-size: 15px;
   font-family: helvetica;
 }
@@ -85,32 +87,25 @@
   margin-left: 40px;
 }
 
-#tron-instructions-advice-text {
-  margin-top: 20px;
-  font-size: 30px;
-}
-
 #tron-instructions-advice-gif {
-  margin-top: 20px;
   display: block;
   float: left;
-  width: 150px;
+  width: 176px;
   border: 5px ridge #2073b8;
+  margin-right: 25px;
 }
 
 #tron-instructions-back {
   display: block;
   float: left;
-  margin-top: 35px;
-  margin-left: 100px;
 
-  color: #2073b8;
+  color: white;
   font-family: helvetica;
   font-style: italic;
-  font-size: 50px;
+  font-size: 102px;
 }
 
 #tron-instructions-back:hover {
-  color: red;
+  text-shadow: 0 0 0.5em #FF0000;
   cursor: pointer;
 }

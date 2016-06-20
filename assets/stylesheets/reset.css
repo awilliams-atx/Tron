@@ -2,14 +2,30 @@ li {
   list-style: none;
 }
 
+p, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* CLEARFIX */
+
 .group::after {
   content: '';
   display: block;
   clear: both;
 }
 
-p, li {
-  margin: 0;
-  padding: 0;
-  border: 0;
+/* VARIABLE WIDTH CENTER ALIGNMENT */
+
+.outer {
+  position: relative;
+  left: 50%;
+  float: left;
+}
+
+.inner {
+  position: relative;
+  left: -50%;
+  float: left;
 }

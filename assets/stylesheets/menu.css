@@ -33,7 +33,7 @@
 }
 
 #tron-outer-menu li:nth-child(1n + 2):hover {
-  text-shadow: 0 0 0.5em #FF0000;
+  text-shadow: 0 0 0.4em #FF0000;
   cursor: pointer;
 }
 
