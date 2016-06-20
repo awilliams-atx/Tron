@@ -3,6 +3,11 @@ li {
 }
 
 p, li {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: inherit;
+  
   margin: 0;
   padding: 0;
   border: 0;

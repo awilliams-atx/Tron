@@ -18,31 +18,51 @@
   color: white;
   font-size: 25px;
   background-color: black;
-  opacity: .5;
+  opacity: 0;
 }
 
-.tron-modal-pause-content {
+#tron-modal-pause-content {
   text-align: center;
   padding-top: 115px;
   font-family: helvetica;
 }
 
-.tron-modal-paused-header {
-  display: inline;
-  top: 93px;
-  font-style: italic;
+#tron-modal-pause-header {
+  position: relative;
+  right: -165px;
+  top: -100px;
 }
 
-.tron-menu-paused-header-animate {
+#tron-modal-pause-body {
+  position: relative;
+  left: -165px;
+  top: 100px;
+}
+
+.tron-modal-pause-header-animate {
+  transform: translate3d(-165px, 100px, 0px);
+  opacity: 1;
   transition: transform, 0.2s;
-  transform: translate3d(-350px, 0px, 0px);
+  transition: opacity, 0.2s;
 }
 
-.tron-modal-paused-body {
-  display: inline;
-}
-
-.tron-menu-paused-header-animate {
+.tron-modal-pause-body-animate {
+  transform: translate3d(165px, -100px, 0px);
+  opacity: 1;
   transition: transform, 0.2s;
-  transform: translate3d(-350px, 0px, 0px);
+  transition: opacity, 0.2s;
+}
+
+.tron-modal-pause-header-nowhere {
+  transform: translate3d(1, 0, 0);
+  opacity: 0;
+  transition: transform, 0.2s;
+  transition: opacity, 0.2s;
+}
+
+.tron-modal-pause-body-nowhere {
+  transform: translate3d(1, 0, 0);
+  opacity: 0;
+  transition: transform, 0.2s;
+  transition: opacity, 0.2s;
 }
