@@ -18,12 +18,12 @@
   left: 350px;
 }
 
-#tron-menu-winner {
+#tron-menu-announcement {
   font-style: italic;
   height: 29px;
 }
 
-#tron-menu-winner:hover {
+#tron-menu-announcement:hover {
   cursor: default;
 }
 
