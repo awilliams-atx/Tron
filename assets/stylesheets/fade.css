@@ -8,7 +8,6 @@
 }
 
 .transparent-block {
-  display: block;
   opacity: 0;
 }
 
@@ -18,7 +17,6 @@
 }
 
 .fade-out {
-  display: block;
   transition: opacity .25s ease;
   opacity: 1;
 }
