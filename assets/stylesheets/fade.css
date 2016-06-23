@@ -13,17 +13,16 @@
 }
 
 .fade-in {
-  transition: opacity .25s ease;
+  transition: opacity .249s ease;
   opacity: 0;
 }
 
 .fade-out {
   display: block;
-  transition: opacity .23s ease;
+  transition: opacity .25s ease;
   opacity: 1;
 }
 
 .nowhere {
   display: none;
-  opacity: 0;
 }
