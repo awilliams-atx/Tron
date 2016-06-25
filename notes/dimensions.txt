@@ -1,0 +1,2 @@
+The positions at which out-of-bounds is triggered (top first, then clockwise):
+< 0, >= Constants.DIM_X / 10, >= Constants.DIM_Y / 10, < 0
