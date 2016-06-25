@@ -1,0 +1,303 @@
+#tron-screen-fader {
+  position: absolute;
+  top: 104px;
+  left: 20px;
+  width: 500px;
+  height: 300px;
+  background-color: black; }
+
+.transparent-block {
+  opacity: 0; }
+
+.fade-in {
+  transition: opacity .249s ease;
+  opacity: 0; }
+
+.fade-out {
+  transition: opacity .25s ease;
+  opacity: 1; }
+
+.nowhere {
+  display: none; }
+
+#tron-game-type-selection > p {
+  position: absolute;
+  font-family: helvetica;
+  font-size: 25px;
+  color: white; }
+
+.single-player-transparent {
+  top: 240px;
+  right: 370px;
+  display: block;
+  opacity: 0;
+  transition: all .2s; }
+
+.two-player-transparent {
+  top: 240px;
+  right: 20px;
+  display: block;
+  opacity: 0;
+  transition: all .2s; }
+
+.single-player-fly-in {
+  top: 240px;
+  right: 370px;
+  transform: translate3d(95px, 0, 0);
+  opacity: 1;
+  transition: all .2s; }
+
+.two-player-fly-in {
+  top: 240px;
+  right: 20px;
+  transform: translate3d(-95px, 0, 0);
+  opacity: 1;
+  transition: all .2s; }
+
+.single-player-fly-in:hover {
+  text-shadow: 0 0 0.4em #FF0000;
+  cursor: pointer; }
+
+.two-player-fly-in:hover {
+  text-shadow: 0 0 0.4em #FF0000;
+  cursor: pointer; }
+
+#tron-game {
+  position: relative;
+  width: 540px;
+  margin: 30px auto; }
+
+#tron-game header img {
+  margin-bottom: 20px;
+  width: 540px; }
+
+#tron-canvas {
+  display: block;
+  border: 20px ridge #068bf9; }
+
+.tron-instructions-player {
+  width: 245px;
+  float: left;
+  margin-bottom: 15px; }
+
+#tron-instructions-header:hover {
+  cursor: default; }
+
+#tron-instructions-movement {
+  width: 100%;
+  margin-top: 25px;
+  margin-left: 22px; }
+
+#tron-instructions-player-one {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  color: #FFF700; }
+
+#tron-instructions-player-one:hover {
+  cursor: default; }
+
+#tron-instructions-player-two {
+  margin-bottom: 20px;
+  margin-left: 20px;
+  color: #FF00D0; }
+
+#tron-instructions-player-two:hover {
+  cursor: default; }
+
+#tron-instructions-player-one-key-info {
+  display: block;
+  float: left;
+  font-size: 15px;
+  width: 110px;
+  margin-left: 20px; }
+
+#tron-instructions-player-one-key-info:hover {
+  cursor: default; }
+
+#tron-instructions-player-one-keys {
+  display: block;
+  float: left;
+  margin-left: 10px; }
+
+#tron-instructions-player-two-key-info {
+  display: block;
+  float: left;
+  font-size: 15px;
+  width: 110px;
+  margin-left: 20px; }
+
+#tron-instructions-player-two-key-info:hover {
+  cursor: default; }
+
+#tron-instructions-player-two-keys {
+  display: block;
+  float: left;
+  margin-left: 10px; }
+
+#tron-instructions-pause-new-game {
+  margin-bottom: 15px; }
+
+#tron-instructions-pause-new-game-text {
+  display: block;
+  float: left;
+  margin-right: 20px;
+  line-height: 25px;
+  font-size: 15px;
+  font-family: helvetica; }
+
+#tron-instructions-advice {
+  margin-left: 40px; }
+
+#tron-instructions-advice-gif {
+  display: block;
+  float: left;
+  width: 176px;
+  border: 5px ridge #2073b8;
+  margin-right: 25px; }
+
+#tron-instructions-back {
+  display: block;
+  float: left;
+  color: white;
+  font-family: helvetica;
+  font-style: italic;
+  font-size: 102px; }
+
+#tron-instructions-back:hover {
+  text-shadow: 0 0 0.5em #FF0000;
+  cursor: pointer; }
+
+.tron-game-menu {
+  font-family: helvetica;
+  position: absolute;
+  float: left;
+  color: white;
+  font-size: 25px;
+  top: 93px;
+  left: -2px; }
+
+#tron-outer-menu ul {
+  position: relative; }
+
+#tron-outer-menu li {
+  margin-bottom: 10px;
+  position: relative;
+  left: 350px; }
+
+#tron-menu-announcement {
+  font-style: italic;
+  height: 29px; }
+
+#tron-menu-announcement:hover {
+  cursor: default; }
+
+.tron-menu-animate {
+  transform: translate3d(-350px, 0px, 0px);
+  opacity: 1;
+  transition: all 0.2s; }
+
+.tron-menu-nowhere {
+  opacity: 0;
+  transform: translate3d(0, 0, 0);
+  transition: all 0.2s; }
+
+#tron-outer-menu li:nth-child(1n + 2):hover {
+  text-shadow: 0 0 0.4em #FF0000;
+  cursor: pointer; }
+
+#tron-menu-background {
+  position: absolute;
+  top: 11px;
+  left: 22px;
+  width: 500px;
+  opacity: 0.4; }
+
+#tron-screen-fader {
+  position: absolute;
+  top: 104px;
+  left: 20px;
+  width: 500px;
+  height: 300px;
+  background-color: black; }
+
+.tron-modal {
+  display: block;
+  position: absolute;
+  top: 104px;
+  left: 20px;
+  width: 500px;
+  height: 300px;
+  color: white;
+  font-size: 25px;
+  background-color: black;
+  opacity: 0; }
+
+#tron-modal-pause-content {
+  text-align: center;
+  padding-top: 115px;
+  font-family: helvetica; }
+
+#tron-modal-pause-header {
+  position: relative;
+  right: -165px;
+  top: -100px; }
+
+#tron-modal-pause-body {
+  position: relative;
+  left: -165px;
+  top: 100px; }
+
+.tron-modal-pause-header-animate {
+  transform: translate3d(-165px, 100px, 0px);
+  opacity: 1;
+  transition: transform, 0.2s;
+  transition: opacity, 0.2s; }
+
+.tron-modal-pause-body-animate {
+  transform: translate3d(165px, -100px, 0px);
+  opacity: 1;
+  transition: transform, 0.2s;
+  transition: opacity, 0.2s; }
+
+.tron-modal-pause-header-nowhere {
+  transform: translate3d(1, 0, 0);
+  opacity: 0;
+  transition: transform, 0.2s;
+  transition: opacity, 0.2s; }
+
+.tron-modal-pause-body-nowhere {
+  transform: translate3d(1, 0, 0);
+  opacity: 0;
+  transition: transform, 0.2s;
+  transition: opacity, 0.2s; }
+
+li {
+  list-style: none; }
+
+p, li {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-decoration: inherit;
+  margin: 0;
+  padding: 0;
+  border: 0; }
+
+/* CLEARFIX */
+.group::after {
+  content: '';
+  display: block;
+  clear: both; }
+
+/* VARIABLE WIDTH CENTER ALIGNMENT */
+.outer {
+  position: relative;
+  left: 50%;
+  float: left; }
+
+.inner {
+  position: relative;
+  left: -50%;
+  float: left; }
+
+/*# sourceMappingURL=bundle.css.map */

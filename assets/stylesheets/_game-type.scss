@@ -1,0 +1,48 @@
+#tron-game-type-selection > p {
+  position: absolute;
+  font-family: helvetica;
+  font-size: 25px;
+  color: white;
+}
+
+.single-player-transparent {
+  top: 240px;
+  right: 370px;
+  display: block;
+  opacity: 0;
+  transition: all .2s;
+}
+
+.two-player-transparent {
+  top: 240px;
+  right: 20px;
+  display: block;
+  opacity: 0;
+  transition: all .2s;
+}
+
+.single-player-fly-in {
+  top: 240px;
+  right: 370px;
+  transform: translate3d(95px, 0, 0);
+  opacity: 1;
+  transition: all .2s;
+}
+
+.two-player-fly-in {
+  top: 240px;
+  right: 20px;
+  transform: translate3d(-95px, 0, 0);
+  opacity: 1;
+  transition: all .2s;
+}
+
+.single-player-fly-in:hover {
+  text-shadow: 0 0 0.4em #FF0000;
+  cursor: pointer;
+}
+
+.two-player-fly-in:hover {
+  text-shadow: 0 0 0.4em #FF0000;
+  cursor: pointer;
+}
