@@ -1,3 +1,7 @@
+/* RESET.SCSS */
+
+// RESET
+
 li {
   list-style: none;
 }
@@ -7,13 +11,13 @@ p, li {
   font-size: inherit;
   color: inherit;
   text-decoration: inherit;
-  
+
   margin: 0;
   padding: 0;
   border: 0;
 }
 
-/* CLEARFIX */
+// CLEARFIX
 
 .group::after {
   content: '';
@@ -21,7 +25,7 @@ p, li {
   clear: both;
 }
 
-/* VARIABLE WIDTH CENTER ALIGNMENT */
+// VARIABLE WIDTH CENTER ALIGNMENT
 
 .outer {
   position: relative;

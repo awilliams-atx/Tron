@@ -1,3 +1,4 @@
+/* FADE.SCSS */
 #tron-screen-fader {
   position: absolute;
   top: 104px;
@@ -20,6 +21,7 @@
 .nowhere {
   display: none; }
 
+/* GAME-TYPE.SCSS */
 #tron-game-type-selection > p {
   position: absolute;
   font-family: helvetica;
@@ -62,6 +64,7 @@
   text-shadow: 0 0 0.4em #FF0000;
   cursor: pointer; }
 
+/* GAME.SCSS */
 #tron-game {
   position: relative;
   width: 540px;
@@ -75,6 +78,7 @@
   display: block;
   border: 20px ridge #068bf9; }
 
+/* INSTRUCTIONS.SCSS */
 .tron-instructions-player {
   width: 245px;
   float: left;
@@ -167,6 +171,7 @@
   text-shadow: 0 0 0.5em #FF0000;
   cursor: pointer; }
 
+/* MENU.SCSS */
 .tron-game-menu {
   font-family: helvetica;
   position: absolute;
@@ -212,6 +217,7 @@
   width: 500px;
   opacity: 0.4; }
 
+/* PAUSE.SCSS */
 #tron-screen-fader {
   position: absolute;
   top: 104px;
@@ -271,6 +277,7 @@
   transition: transform, 0.2s;
   transition: opacity, 0.2s; }
 
+/* RESET.SCSS */
 li {
   list-style: none; }
 
@@ -283,13 +290,11 @@ p, li {
   padding: 0;
   border: 0; }
 
-/* CLEARFIX */
 .group::after {
   content: '';
   display: block;
   clear: both; }
 
-/* VARIABLE WIDTH CENTER ALIGNMENT */
 .outer {
   position: relative;
   left: 50%;
@@ -299,5 +304,7 @@ p, li {
   position: relative;
   left: -50%;
   float: left; }
+
+/* FOOTER.SCSS */
 
 /*# sourceMappingURL=bundle.css.map */
