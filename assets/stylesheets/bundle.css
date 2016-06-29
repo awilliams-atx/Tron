@@ -255,7 +255,8 @@
   opacity: 0.4; }
 
 body {
-  background-image: url("../images/background.jpg"); }
+  background-image: url("../images/background.jpg");
+  background-size: cover; }
 
 /* PAUSE.SCSS */
 #tron-screen-fader {
