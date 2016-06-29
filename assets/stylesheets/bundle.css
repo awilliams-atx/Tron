@@ -182,7 +182,9 @@
   left: -2px; }
 
 #tron-outer-menu ul {
-  position: relative; }
+  position: relative;
+  top: 20px;
+  left: 40px; }
 
 #tron-outer-menu li {
   margin-bottom: 10px;
@@ -281,7 +283,7 @@
 li {
   list-style: none; }
 
-p, li {
+a, p, ul, li {
   font-family: inherit;
   font-size: inherit;
   color: inherit;
@@ -307,6 +309,35 @@ p, li {
 
 /* FOOTER.SCSS */
 #tron-footer {
-  font-family: 'Abel', sans-serif; }
+  margin: 15px auto;
+  text-align: center;
+  font-family: 'Abel', sans-serif;
+  font-size: 25px; }
+  #tron-footer a {
+    transition: color .3s linear; }
+  #tron-footer a:hover {
+    color: #068bf9;
+    transition: color .3s linear; }
+  #tron-footer ul {
+    position: relative;
+    left: 35px; }
+  #tron-footer li {
+    width: 150px;
+    float: left; }
+  #tron-footer li:last-child {
+    position: relative;
+    right: 35px; }
+  #tron-footer i {
+    position: relative;
+    top: 20px;
+    font-size: 95px;
+    transition: color .3s linear; }
+  #tron-footer i:hover {
+    color: #068bf9;
+    transition: color .3s linear; }
+
+#tron-portfolio {
+  font-family: 'Marck Script', cursive;
+  font-size: 120px; }
 
 /*# sourceMappingURL=bundle.css.map */

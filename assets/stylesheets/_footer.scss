@@ -1,5 +1,42 @@
 /* FOOTER.SCSS */
 
 #tron-footer {
+  margin: 15px auto;
+  text-align: center;
   font-family: 'Abel', sans-serif;
+  font-size: 25px;
+  a {
+    transition: color .3s linear;
+  }
+  a:hover {
+    color: #068bf9;
+    transition: color .3s linear;
+  }
+  ul {
+    position: relative;
+    left: 35px;
+  }
+  li {
+    width: 150px;
+    float: left;
+  }
+  li:last-child {
+    position: relative;
+    right: 35px;
+  }
+  i {
+    position: relative;
+    top: 20px;
+    font-size: 95px;
+    transition: color .3s linear;
+  }
+  i:hover {
+    color: #068bf9;
+    transition: color .3s linear;
+  }
+}
+
+#tron-portfolio {
+  font-family: 'Marck Script', cursive;
+  font-size: 120px;
 }
