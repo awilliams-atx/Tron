@@ -306,5 +306,7 @@ p, li {
   float: left; }
 
 /* FOOTER.SCSS */
+#tron-footer {
+  font-family: 'Abel', sans-serif; }
 
 /*# sourceMappingURL=bundle.css.map */
