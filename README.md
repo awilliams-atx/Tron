@@ -1,5 +1,7 @@
 # Tron
 
+![Menu](./assets/images/tron_menu.png)
+
 Grab a friend and start your light cycle engines--it's time to play _Tron_!
 
 ## Game
@@ -8,10 +10,10 @@ Grab a friend and start your light cycle engines--it's time to play _Tron_!
 
 You and your opponent are light cycle riders trapped inside a virtual computer world, and there's only one way out--and only one will leave.
 
-Escape this virtual world by being the last rider riding.
+Escape this virtual world by becoming the last rider riding.
 
 * **Do not collide into the walls.**
-* **Do not collide into your opponent's trail.**
+* **Do not collide into the trails.**
 
 ### Keys
 
