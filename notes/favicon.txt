@@ -1,3 +1,4 @@
 COLORS:
   'a' #f88383
   'W' #82aaec
+FONT: Marck Script
