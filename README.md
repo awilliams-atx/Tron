@@ -1,6 +1,9 @@
 # Tron
 
-![Menu](./assets/images/tron_menu.png)
+[![Tron][2]][1]
+
+[1]: http://awilliams-atx.github.io/tron
+[2]: ./assets/images/tron_menu.png (Tron)
 
 Grab a friend and start your light cycle engines--it's time to play _Tron_!
 
